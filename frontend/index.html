@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HelloDocker</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="status-panel">
+        <div>
+          <p class="eyebrow">Docker full-stack check</p>
+          <h1>HelloDocker</h1>
+          <p class="lead">
+            This page is served by the frontend container and reads live data
+            from the FastAPI backend container.
+          </p>
+        </div>
+
+        <div class="status-grid">
+          <article class="tile">
+            <span class="label">Frontend</span>
+            <strong>static</strong>
+            <small>Container is serving static files.</small>
+          </article>
+          <article class="tile">
+            <span class="label">Backend</span>
+            <strong id="backend-status">checking...</strong>
+            <small id="backend-detail">Waiting for /api/health</small>
+          </article>
+        </div>
+
+        <div class="api-card">
+          <div>
+            <span class="label">API message</span>
+            <p id="api-message">Loading backend response...</p>
+          </div>
+          <button id="refresh" type="button">Refresh</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/config.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
