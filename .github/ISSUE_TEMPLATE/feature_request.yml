@@ -1,0 +1,34 @@
+name: 功能请求
+description: 提出一个改进建议或新功能。
+title: "✨ feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题背景
+      description: 这个功能希望解决什么问题？
+      placeholder: 我希望...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 描述你期望的行为或实现方向。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案
+      description: 说明你考虑过的其他方案或取舍。
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充信息
+      description: 链接、截图、示例或相关 Issue。
