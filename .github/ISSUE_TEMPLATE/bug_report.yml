@@ -1,0 +1,61 @@
+name: Bug 问题反馈
+description: 反馈一个可以复现的问题。
+title: "🐛 bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈问题。请尽量提供清晰、可复现的信息，不要包含密钥、token 或其他敏感内容。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题概述
+      description: 简要说明哪里出了问题。
+      placeholder: 后端健康检查接口返回...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请列出准确的命令或操作步骤。
+      placeholder: |
+        1. 运行 docker compose -f compose.yaml up --build
+        2. 打开 http://localhost:8080
+        3. 点击 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+      description: 你原本期望发生什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 实际发生了什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 粘贴相关日志或截图说明。不要包含密钥、token 或其他敏感内容。
+      render: text
+
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、Docker 版本、浏览器或其他有用上下文。
+      placeholder: Windows 11, Docker Desktop, Chrome
