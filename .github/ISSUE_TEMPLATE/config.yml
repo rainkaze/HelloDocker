@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 项目 README
+    url: https://github.com/rainkaze/HelloDocker#readme
+    about: 优先查看项目启动命令、Docker 用法和 CI/CD 说明。
