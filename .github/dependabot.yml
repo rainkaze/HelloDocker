@@ -4,6 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     labels:
       - dependencies
       - ci
@@ -23,4 +27,3 @@ updates:
     labels:
       - dependencies
       - docker
-

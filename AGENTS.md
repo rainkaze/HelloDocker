@@ -11,6 +11,7 @@ HelloDocker 是一个小型前后端分离 Docker 学习项目。
 - `compose.yaml`: 本地开发用 Compose 文件，会构建镜像。
 - `compose.prod.yaml`: 生产风格 Compose 文件，用于拉取已发布镜像并启动。
 - `.github/workflows/docker.yml`: GitHub Actions 工作流，用于冒烟测试和 Docker Hub 镜像发布。
+- `.venv/`: 使用 `uv` 构建的虚拟环境，名称也为 `HelloDocker`。
 
 ## 工作约定
 
